@@ -95,10 +95,10 @@ void loop() {
   }
 
   // ควบคุม Vibrator ตามระยะทาง
-  if (cm <= 20) {
+  if (cm <= 40) {
     Serial.println("high motors");
     digitalWrite(VM1, HIGH);
-  } else if (cm <= 50) {
+  } else if (cm <= 70) {
     Serial.println("medium motor");
     digitalWrite(VM1, HIGH);
     digitalWrite(VM1, LOW);
